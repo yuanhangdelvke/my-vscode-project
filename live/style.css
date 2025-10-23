@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-color: #fdf9f4;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px; /* 主播信息区离顶部50px */
+    padding-bottom: 50px; /* 评论输入区离底部50px */
+    box-sizing: border-box; /* 确保padding不影响整体尺寸 */
+}
+
+.anchor-info {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    /* 固定在容器顶部，配合container的padding-top实现50px间距 */
+    width: 100%;
+}
+
+.anchor-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin-right: 10px;
+}
+
+.anchor-text {
+    flex: 1;
+}
+
+.anchor-name {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.follow-btn {
+    background-color: #ff5000;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+.anchor-fans {
+    font-size: 12px;
+    color: #666;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+}
+
+/* 评论列表从下往上排列 */
+.comments-list {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 15px;
+}
+
+.comment-item {
+    display: flex;
+    width: 100%;
+}
+
+.comment-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin-right: 8px;
+}
+
+.comment-content {
+    background-color: #f0f0f0;
+    padding: 8px 12px;
+    border-radius: 18px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-username {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 2px;
+}
+
+.comment-text {
+    font-size: 14px;
+    color: #333;
+}
+
+.comment-input-area {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #eee;
+    /* 固定在容器底部，配合container的padding-bottom实现50px间距 */
+    width: 100%;
+}
+
+#commentInput {
+    flex: 1;
+    height: 36px;
+    border: 1px solid #ddd;
+    border-radius: 18px;
+    padding: 0 15px;
+    font-size: 14px;
+}
+
+.emoji-btn, .send-btn {
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 50%;
+    margin-left: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: #f0f0f0;
+}
+
+.send-btn {
+    background-color: #07c160;
+    color: #fff;
+}

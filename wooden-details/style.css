@@ -1,0 +1,197 @@
+/* 全局样式重置和基础设置 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FDF9F4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+/* 页面固定尺寸容器 */
+.page-container {
+    width: 393px;
+    height: 852px;
+    background-color: #FDF9F4;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 头部区域样式 */
+.header {
+    background-color: #FDF9F4;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.header img{
+    margin-bottom: -5px;
+    width: 16px;
+    height: 16px;
+}
+
+.back-btn {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 0.6; /* 占据剩余空间，让标题居中 */
+}
+
+/* 导航菜单样式 */
+.nav {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    background-color: #FDF9F4;
+    margin-bottom: 10px;
+    flex-shrink: 0;
+}
+
+.nav-item {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* 主图片展示区域样式 */
+.image-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: #FDF9F4;
+    margin-bottom: 10px;
+    flex-shrink: 0;
+}
+
+.arrow {
+    font-size: 30px;
+    color: #666;
+    cursor: pointer;
+    margin: 0 15px;
+    user-select: none; /* 防止点击时文本被选中 */
+    transition: color 0.3s;
+}
+
+.arrow:hover {
+    color: #333;
+}
+
+.main-img {
+    max-width: 80%;
+    max-height: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    object-fit: contain;
+}
+
+/* 产品信息区域样式 */
+.info {
+    padding: 20px;
+    background-color: #FDF9F4;
+    line-height: 1.6;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.toy-name {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0 0px;
+}
+
+.author {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin: 10px 0 20px;
+    font-style: italic;
+}
+
+.desc {
+    font-size: 16px;
+    color: #555;
+    text-indent: 2em; /* 首行缩进 */
+    margin-bottom: 15px;
+}
+
+/* 自定义滚动条样式 */
+.info::-webkit-scrollbar {
+    width: 6px;
+}
+
+.info::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.info::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 10px;
+}
+
+.info::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* 响应式调整 */
+@media (max-width: 393px) {
+    body {
+        padding: 0;
+    }
+    
+    .page-container {
+        border-radius: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .nav-item {
+        width: 45px;
+        height: 45px;
+        margin: 0 8px;
+    }
+    
+    .nav-img {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .main-img {
+        max-height: 250px;
+    }
+}

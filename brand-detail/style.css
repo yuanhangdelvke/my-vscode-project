@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Microsoft Yahei", sans-serif;
+    background-color: #FDF9F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+/* 页面固定尺寸容器 */
+.page-container {
+    width: 393px;
+    height: 852px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.header {
+    background-color: #FDF9F4;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.header img{
+    margin-bottom: -5px;
+    width: 16px;
+    height: 16px;
+}
+
+.back-btn {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 0.6; /* 占据剩余空间，让标题居中 */
+}
+
+.brand-list {
+    list-style: none;
+    background-color: #FDF9F4;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+}
+
+.brand-item {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.brand-item img {
+    width: 76px;
+    height: 104px;
+    margin-right: 15px;
+    object-fit: contain;
+}
+
+.brand-info h2 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.brand-info p {
+    font-size: 14px;
+    color: #A7A7A7;
+}
+
+/* 自定义滚动条样式 */
+.brand-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.brand-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.brand-list::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 10px;
+}
+
+.brand-list::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* 响应式调整 */
+@media (max-width: 393px) {
+    body {
+        padding: 0;
+    }
+    
+    .page-container {
+        border-radius: 0;
+        width: 100%;
+        height: 100vh;
+    }
+}

@@ -1,0 +1,173 @@
+/* 全局重置与基础样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "微软雅黑", sans-serif;
+}
+
+body {
+    background-color: #f8f5f2;
+    color: #5a4a42;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+/* 页面固定尺寸容器 */
+.page-container {
+    width: 393px;
+    height: 852px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* 地图区域 */
+.map-area {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.back-btn {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 60px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.back-btn img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.back-btn h2 {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.map-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 企业列表弹窗 - 嵌入地图中 */
+.company-list {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 360px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 22px 22px 0 0;
+    padding: 15px;
+    z-index: 5;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    max-height: 60vh;
+    overflow-y: auto;
+    margin: 0 auto;
+}
+
+.company-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.company-item:last-child {
+    border-bottom: none;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-weight: bold;
+    color: #666;
+}
+
+.info {
+    flex: 1;
+}
+
+.info h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.info p {
+    font-size: 12px;
+    color: #A7A7A7;
+    line-height: 1.4;
+}
+
+.enter-btn {
+    color: #000000;
+    margin-bottom: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.enter-btn:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* 自定义滚动条样式 */
+.company-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.company-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.company-list::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 10px;
+}
+
+.company-list::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* 响应式调整 */
+@media (max-width: 393px) {
+    body {
+        padding: 0;
+    }
+    
+    .page-container {
+        border-radius: 0;
+        width: 100%;
+        height: 100vh;
+    }
+}

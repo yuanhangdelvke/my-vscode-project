@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>木玩展示界面</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 页面固定尺寸容器 -->
+    <div class="page-container">
+        <!-- 内容区域 - 可滚动 -->
+        <div class="content-area">
+            <!-- 顶部Banner区域 -->
+            <div class="header">
+                <img src="images/生成木头玩具图片 1.png" alt="木玩展示图">
+            </div>
+
+            <!-- 功能按钮区域 -->
+            <div class="function-buttons">
+                <div class="btn-item">
+                    <div class="placeholder-img btn-img story-bg"></div>
+                    <span>品牌故事</span>
+                </div>
+                <div class="btn-item">
+                    <div class="placeholder-img btn-img map-bg"></div>
+                    <span>产品地图</span>
+                </div>
+            </div>
+
+            <!-- 木玩+区域 -->
+            <div class="woodplus-section">
+                <h3>木玩+</h3>
+                <div class="woodplus-item">
+                    <img src="images/Rectangle 72.png" alt="教育木玩">
+                    <span>教育</span>
+                </div>
+                <div class="woodplus-item">
+                    <img src="images/Rectangle 73.png" alt="科技木玩">
+                    <span>科技</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部导航区域 -->
+        <nav class="bottom-nav">
+            <a href="#" class="nav-item" data-page="museum">
+                <div class="nav-icon">
+                    <img src="images/maki_museum.png" alt="博物馆">
+                </div>
+                <div>博物馆</div>
+            </a>
+            <a href="#" class="nav-item active" data-page="industry">
+                <div class="nav-icon">
+                    <img src="images/material-symbols_conveyor-belt.png" alt="产业带">
+                </div>
+                <div>产业带</div>
+            </a>
+            <a href="#" class="nav-item" data-page="workshop">
+                <div class="nav-icon">
+                    <img src="images/material-symbols_factory-rounded.png" alt="大工坊">
+                </div>
+                <div>大工坊</div>
+            </a>
+            <a href="#" class="nav-item" data-page="profile">
+                <div class="nav-icon">
+                    <img src="images/material-symbols_person.png" alt="我的">
+                </div>
+                <div>我的</div>
+            </a>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

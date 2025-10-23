@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博物馆-匠人数字档案</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 页面固定尺寸容器 -->
+    <div class="page-container">
+        <div class="header">
+            <img src="images/生成木头玩具图片 2.png" alt="木玩展示图">
+        </div>
+        
+        <div class="nav-buttons">
+            <button class="nav-btn">
+                <img src="images/gridicons_book.png" alt="数字展馆图标">
+                <span>数字展馆</span>
+            </button>
+            <button class="nav-btn">
+                <img src="images/ri_dna-fill.png" alt="木玩基因库图标">
+                <span>木玩基因库</span>
+            </button>
+            <button class="nav-btn active">
+                <img src="images/iconamoon_profile-fill.png" alt="匠人数字档案图标">
+                <span>匠人数字档案</span>
+            </button>
+        </div>
+        
+        <!-- 主要内容 -->
+        <div class="content">
+            <!-- 匠人卡片1 -->
+            <div class="craftsman-card">
+                <div class="avatar"> <img src="images/Ellipse 2.png" alt=""> </div>
+                <div class="info">
+                    <div class="name">廖复新</div>
+                    <div class="title">第一代木玩人的典型代表</div>
+                </div>
+                <button class="follow-btn followed">已关注</button>
+            </div>
+            
+            <!-- 匠人卡片2 -->
+            <div class="craftsman-card">
+                <div class="avatar"> <img src="images/Ellipse 3.png" alt=""> </div>
+                <div class="info">
+                    <div class="name">练巧忠</div>
+                    <div class="title">浙江省工艺美术大师</div>
+                </div>
+                <button class="follow-btn followed">已关注</button>
+            </div>
+            
+            <!-- 匠人卡片3 -->
+            <div class="craftsman-card">
+                <div class="avatar"> <img src="images/Ellipse 4.png" alt=""> </div>
+                <div class="info">
+                    <div class="name">游小卫</div>
+                    <div class="title">益智木玩专家</div>
+                </div>
+                <button class="follow-btn followed">已关注</button>
+            </div>
+            
+            <!-- 匠人卡片4 -->
+            <div class="craftsman-card">
+                <div class="avatar"> <img src="images/Ellipse 5.png" alt=""> </div>
+                <div class="info">
+                    <div class="name">李金龙</div>
+                    <div class="title">浙江省杰出职工"金锤奖"</div>
+                </div>
+                <button class="follow-btn followed">已关注</button>
+            </div>
+            
+            <!-- 匠人卡片5 -->
+            <div class="craftsman-card">
+                <div class="avatar"> <img src="images/Ellipse 6.png" alt=""> </div>
+                <div class="info">
+                    <div class="name">何尚清</div>
+                    <div class="title">中国木制玩具产业化表人物</div>
+                </div>
+                <button class="follow-btn followed">已关注</button>
+            </div>
+            
+        </div>
+        
+        <!-- 底部导航 -->
+        <nav class="bottom-nav">
+            <a href="#" class="nav-item active" data-page="museum">
+                <div class="nav-icon">
+                    <img src="images/maki_museum.png" alt="">
+                </div>
+                <div>博物馆</div>
+            </a>
+            <a href="#" class="nav-item" data-page="industry">
+                <div class="nav-icon">
+                    <img src="images/material-symbols_conveyor-belt.png" alt="">
+                </div>
+                <div>产业带</div>
+            </a>
+            <a href="#" class="nav-item" data-page="workshop">
+                <div class="nav-icon">
+                    <img src="images/material-symbols_factory-rounded.png" alt="">
+                </div>
+                <div>大工坊</div>
+            </a>
+            <a href="#" class="nav-item" data-page="profile">
+                <div class="nav-icon">
+                    <img src="images/material-symbols_person.png" alt="">
+                </div>
+                <div>我的</div>
+            </a>
+        </nav>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

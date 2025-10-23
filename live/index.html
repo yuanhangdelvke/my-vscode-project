@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>直播评论界面</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 主播信息区域 -->
+        <div class="anchor-info">
+            <img src="images/Ellipse 2.png" alt="主播头像" class="anchor-avatar">
+            <div class="anchor-text">
+                <div class="anchor-name">直播账号 <span class="follow-btn">关注</span></div>
+                <div class="anchor-fans">26.7k粉丝</div>
+            </div>
+            <button class="close-btn">×</button>
+        </div>
+
+        <!-- 评论列表区域 -->
+        <div class="comments-list">
+            <div class="comment-item">
+                <img src="images/Ellipse 2.png" alt="用户头像" class="comment-avatar">
+                <div class="comment-content">
+                    <div class="comment-username">用户名</div>
+                    <div class="comment-text">学到了</div>
+                </div>
+            </div>
+            <div class="comment-item">
+                <img src="images/Ellipse 13.png" alt="用户头像" class="comment-avatar">
+                <div class="comment-content">
+                    <div class="comment-username">用户名</div>
+                    <div class="comment-text">点赞</div>
+                </div>
+            </div>
+            <div class="comment-item">
+                <img src="images/Ellipse 14.png" alt="用户头像" class="comment-avatar">
+                <div class="comment-content">
+                    <div class="comment-username">用户名</div>
+                    <div class="comment-text">下次什么时候直播？</div>
+                </div>
+            </div>
+            <div class="comment-item">
+                <img src="images/Ellipse 15.png" alt="用户头像" class="comment-avatar">
+                <div class="comment-content">
+                    <div class="comment-username">用户名</div>
+                    <div class="comment-text">喜欢</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 评论输入区域 -->
+        <div class="comment-input-area">
+            <input type="text" id="commentInput" placeholder="请输入评论">
+            <button class="emoji-btn">😀</button>
+            <button class="send-btn">✈️</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

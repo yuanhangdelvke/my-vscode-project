@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>研学教育区</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 页面容器 -->
+    <div class="page-container">
+        <!-- 主要内容区域 -->
+        <div class="main-content">
+            <div class="header">
+                <img src="images/famicons_chevron-back-outline.png" alt="返回">
+                <a href="../workshop/index.html" class="back-btn">返回</a>
+                <div class="title">研学教育区</div>
+            </div>
+            
+            <div class="search-box">
+                <input type="text" placeholder="查找课程">
+                <button class="search-btn"></button>
+            </div>
+            
+            <div class="function-buttons">
+                <div class="btn-item">
+                    <div class="placeholder-img btn-img story-bg"></div>
+                    <span>绘本</span>
+                </div>
+                <div class="btn-item">
+                    <div class="placeholder-img btn-img map-bg"></div>
+                    <span>童话</span>
+                </div>
+            </div>
+            
+            <div class="filter">
+                <h2>选择课程</h2>
+                <div class="filter-btns">
+                    <button class="filter-btn active">全部</button>
+                    <button class="filter-btn">启蒙</button>
+                    <button class="filter-btn">进阶</button>
+                </div>
+            </div>
+            
+            <div class="course-card">
+                <!-- 第一个课程卡片 -->
+                <div class="course-item">
+                    <div class="img-area">
+                        <img src="images/Rectangle 95.png" alt="动物拼插木玩课">
+                    </div>
+                    <div class="info-area">
+                        <h3 class="course-title">动物拼插木玩课</h3>
+                        <div class="tag-group">
+                            <span class="tag">启蒙</span>
+                            <span class="tag">4-6岁</span>
+                        </div>
+                        <p class="course-desc">"宝宝第一堂木玩课！"</p>
+                    </div>
+                </div>
+                
+                <!-- 第二个课程卡片 -->
+                <div class="course-item">
+                    <div class="img-area">
+                        <img src="images/Rectangle 101.png" alt="木制轨道车组装课">
+                    </div>
+                    <div class="info-area">
+                        <h3 class="course-title">木制轨道车组装课</h3>
+                        <div class="tag-group">
+                            <span class="tag">进阶</span>
+                            <span class="tag">7-12岁</span>
+                        </div>
+                        <p class="course-desc">"小车滑得快，秘密在轨道！"</p>
+                    </div>
+                </div>
+                
+                <!-- 第三个课程卡片 -->
+                <div class="course-item">
+                    <div class="img-area">
+                        <img src="images/Rectangle 102.png" alt="亲子木制风铃课">
+                    </div>
+                    <div class="info-area">
+                        <h3 class="course-title">亲子木制风铃课</h3>
+                        <div class="tag-group">
+                            <span class="tag">入门</span>
+                            <span class="tag">3-8岁</span>
+                        </div>
+                        <p class="course-desc">"亲子 1 小时共做！风铃响，回忆甜"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部导航 -->
+        <nav class="bottom-nav">
+            <a href="#" class="nav-item" data-page="museum">
+                <div class="nav-icon">
+                    <img src="images/maki_museum.png" alt="博物馆">
+                </div>
+                <div>博物馆</div>
+            </a>
+            <a href="#" class="nav-item" data-page="industry">
+                <div class="nav-icon">
+                    <img src="images/material-symbols_conveyor-belt.png" alt="产业带">
+                </div>
+                <div>产业带</div>
+            </a>
+            <a href="#" class="nav-item active" data-page="workshop">
+                <div class="nav-icon">
+                    <img src="images/material-symbols_factory-rounded.png" alt="大工坊">
+                </div>
+                <div>大工坊</div>
+            </a>
+            <a href="#" class="nav-item" data-page="profile">
+                <div class="nav-icon">
+                    <img src="images/material-symbols_person.png" alt="我的">
+                </div>
+                <div>我的</div>
+            </a>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

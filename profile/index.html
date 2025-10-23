@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人中心界面</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-container">
+        <div class="container">
+            <!-- 用户信息区域 -->
+            <div class="user-section">
+                <div class="avatar">
+                    <!-- 空白图片替代头像 -->
+                    <img src="images/Ellipse 1.png" alt="用户头像">
+                </div>
+                <div class="user-info">
+                    <h2>用户123</h2>
+                    <p>123xxxx1234</p>
+                </div>
+                <button class="edit-btn">修改资料</button>
+            </div>
+
+            <!-- 功能导航栏 -->
+            <div class="func-nav">
+                <div class="nav-item">
+                    <img src="images/想mingcute_user-follow-fill.png" alt="关注" class="nav-icon">
+                    <p>关注</p>
+                </div>
+                <div class="nav-item">
+                    <img src="images/想solar_star-bold.png" alt="收藏" class="nav-icon">
+                    <p>收藏</p>
+                </div>
+                <div class="nav-item">
+                    <img src="images/想Vector.png" alt="订阅" class="nav-icon">
+                    <p>订阅</p>
+                </div>
+                <div class="nav-item">
+                    <img src="images/想majesticons_list-box.png" alt="订单" class="nav-icon">
+                    <p>订单</p>
+                </div>
+                <div class="nav-item">
+                    <img src="images/想ri_book-fill.png" alt="作品" class="nav-icon">
+                    <p>作品</p>
+                </div>
+            </div>
+
+            <!-- 菜单列表 -->
+            <div class="menu-list">
+                <div class="menu-item">
+                    <span>公告</span>
+                    <span class="arrow"></span>
+                </div>
+                <div class="menu-item">
+                    <span>设置</span>
+                    <span class="arrow"></span>
+                </div>
+                <div class="menu-item">
+                    <span>关于</span>
+                    <span class="arrow"></span>
+                </div>
+                <div class="menu-item">
+                    <span>帮助中心</span>
+                    <span class="arrow"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部导航栏 -->
+        <nav class="bottom-nav">
+            <a href="#" class="nav-item" data-page="museum">
+                <div class="nav-icon">
+                    <img src="images/maki_museum.png" alt="博物馆">
+                </div>
+                <div>博物馆</div>
+            </a>
+            <a href="#" class="nav-item" data-page="industry">
+                <div class="nav-icon">
+                    <img src="images/material-symbols_conveyor-belt.png" alt="产业带">
+                </div>
+                <div>产业带</div>
+            </a>
+            <a href="#" class="nav-item" data-page="workshop">
+                <div class="nav-icon">
+                    <img src="images/material-symbols_factory-rounded.png" alt="大工坊">
+                </div>
+                <div>大工坊</div>
+            </a>
+            <a href="#" class="nav-item active" data-page="profile">
+                <div class="nav-icon">
+                    <img src="images/material-symbols_person.png" alt="我的">
+                </div>
+                <div>我的</div>
+            </a>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

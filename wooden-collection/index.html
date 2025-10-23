@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>玩具展示</title>
+    <!-- 链接到外部的 CSS 样式文件 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 页面固定尺寸容器 -->
+    <div class="page-container">
+        <!-- 内容区域 - 可滚动 -->
+        <div class="content-area">
+            <div class="header">
+                <img src="images/famicons_chevron-back-outline.png" alt="">
+                <a href="../gene-library/index.html" class="back-btn">返回</a>
+                <div class="filter">
+                    <button class="filter-btn active" data-filter="type" data-value="all">全部</button>
+                    <button class="filter-btn" data-filter="type" data-value="folk">民俗类</button>
+                    <button class="filter-btn" data-filter="type" data-value="puzzle">益智类</button>
+                </div>
+                <div class="filter">
+                    <button class="filter-btn active" data-filter="era" data-value="all">全部</button>
+                    <button class="filter-btn" data-filter="era" data-value="1">年代一</button>
+                    <button class="filter-btn" data-filter="era" data-value="2">年代二</button>
+                    <button class="filter-btn" data-filter="era" data-value="3">年代三</button>
+                </div>
+            </div>
+            <div class="toys-grid">
+                <!-- 玩具项将通过 JavaScript 动态生成 -->
+                <div class="toy-item">
+                    <img src="images/toy1.png" alt="玩具1" class="toy-img">
+                    <h3 class="toy-name">传统木马</h3>
+                </div>
+                <div class="toy-item">
+                    <img src="images/toy2.png" alt="玩具2" class="toy-img">
+                    <h3 class="toy-name">七巧板</h3>
+                </div>
+                <div class="toy-item">
+                    <img src="images/toy3.png" alt="玩具3" class="toy-img">
+                    <h3 class="toy-name">木制拼图</h3>
+                </div>
+                <div class="toy-item">
+                    <img src="images/toy4.png" alt="玩具4" class="toy-img">
+                    <h3 class="toy-name">陀螺</h3>
+                </div>
+                <div class="toy-item">
+                    <img src="images/toy5.png" alt="玩具5" class="toy-img">
+                    <h3 class="toy-name">积木</h3>
+                </div>
+                <div class="toy-item">
+                    <img src="images/toy6.png" alt="玩具6" class="toy-img">
+                    <h3 class="toy-name">拨浪鼓</h3>
+                </div>
+                <div class="toy-item">
+                    <img src="images/toy7.png" alt="玩具7" class="toy-img">
+                    <h3 class="toy-name">木制小车</h3>
+                </div>
+                <div class="toy-item">
+                    <img src="images/toy8.png" alt="玩具8" class="toy-img">
+                    <h3 class="toy-name">九连环</h3>
+                </div>
+                <div class="toy-item">
+                    <img src="images/toy9.png" alt="玩具9" class="toy-img">
+                    <h3 class="toy-name">木偶</h3>
+                </div>
+                <div class="toy-item">
+                    <img src="images/toy10.png" alt="玩具10" class="toy-img">
+                    <h3 class="toy-name">华容道</h3>
+                </div>
+                <div class="toy-item">
+                    <img src="images/toy11.png" alt="玩具11" class="toy-img">
+                    <h3 class="toy-name">木制乐器</h3>
+                </div>
+                <div class="toy-item">
+                    <img src="images/toy12.png" alt="玩具12" class="toy-img">
+                    <h3 class="toy-name">孔明锁</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 链接到外部的 JavaScript 文件 -->
+    <script src="script.js"></script>
+</body>
+</html>

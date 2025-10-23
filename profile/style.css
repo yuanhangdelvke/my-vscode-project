@@ -1,0 +1,509 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f5f2;
+    color: #5a4a42;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+/* 页面固定尺寸容器 */
+.page-container {
+    width: 393px;
+    height: 852px;
+    background-color: #FDF9F4;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 100%;
+    padding: 0%;
+    flex: 1;
+    overflow-y: auto;
+    padding-bottom: 70px;
+}
+
+.header1{
+    width: 100%;
+    display: flex;
+    background-color: white;
+    align-items: center;
+}
+
+.header1 img{
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+}
+
+/* 头部样式 */
+header {
+    text-align: center;
+    padding: 0px 0;
+    border-bottom: 1px solid #e8e1d9;
+    margin-bottom: 20px;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #FDF9F4;
+}
+
+.nav-btn {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.nav-btn.active {
+    background-color: #D5AF81;
+    color: #664B37;
+    box-shadow: 0 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.nav-btn img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 4px;
+}
+
+/* 用户信息区域 */
+.user-section {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    padding: 10px 15px;
+    background-color: #f8f5f2;
+}
+
+.avatar {
+    margin-right: 15px;
+}
+
+.avatar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-info h2 {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.user-info p {
+    font-size: 14px;
+    color: #a7a7a7;
+}
+
+.edit-btn {
+    margin-left: auto;
+    padding: 6px 12px;
+    background-color: #fff;
+    border-radius: 12px;
+    color: #000;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* 功能导航栏 */
+.func-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0px;
+    background-color: #fff;
+    margin: 35px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    gap: 10px;
+}
+
+.func-nav .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.nav-icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px;
+}
+
+.func-nav .nav-item p {
+    font-size: 12px;
+    color: #333;
+}
+
+/* 菜单列表 */
+.menu-list {
+    background-color: #fff;
+    margin: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid #eee;
+    font-weight: bold;
+}
+
+.menu-item span {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.arrow {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-top: 2px solid #999;
+    border-right: 2px solid #999;
+    transform: rotate(45deg);
+}
+
+/* 虚拟展厅按钮 */
+.virtual-hall {
+    text-align: right;
+    padding: 0px 20px;
+    border-radius: 12px;
+    margin: 25px 0;
+    position: relative;
+}
+
+.virtual-hall img{
+    width: 100%;
+    height: 10rem;
+    position: relative;
+    object-fit: cover;
+}
+
+.enter-btn {
+    display: inline-block;
+    color: black;
+    position: absolute;
+    bottom: 10px;
+    right: 10px; 
+    padding: 12px 15px;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.enter-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 功能区块 */
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 0px 20px;
+}
+
+.feature-card {
+    background-color: #f1d9b0;
+    border-radius: 10px;
+    padding: 10px 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.feature-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.feature-title {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    padding: 0px 8px;
+    margin-bottom: 0px;
+    color: #5a4a42;
+}
+
+.feature-desc {
+    font-size: 12px;
+    text-align: left;
+    padding: 0px 8px;
+    color: #8a7b6e;
+}
+
+.virtual-hall1 {
+    text-align: right;
+    padding: 10px 20px;
+    border-radius: 12px;
+    margin: 25px 0;
+    position: relative;
+}
+
+.virtual-hall1 img{
+    width: 100%;
+    height: 10rem;
+    position: relative;
+    object-fit: cover;
+}
+
+/* 底部导航 */
+.bottom-nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+    z-index: 100;
+}
+
+.bottom-nav .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #8a7b6e;
+    font-size: 12px;
+    transition: all 0.3s ease;
+    flex: 1;
+}
+
+.bottom-nav .nav-item.active {
+    color: #8b6b4c;
+}
+
+.bottom-nav .nav-item:hover {
+    transform: translateY(-2px);
+}
+
+.bottom-nav .nav-icon {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.bottom-nav .nav-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+/* 自定义滚动条样式 */
+.container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 10px;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* 页面切换动画 */
+.page {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.page.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* 功能卡片激活状态 */
+.feature-card.active {
+    border: 2px solid #8b6b4c;
+    transform: scale(1.02);
+}
+
+/* 响应式调整 */
+@media (max-width: 393px) {
+    body {
+        padding: 0;
+    }
+    
+    .page-container {
+        border-radius: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .user-section {
+        margin-top: 40px;
+        padding: 15px;
+    }
+    
+    .func-nav {
+        margin: 25px 10px;
+        padding: 15px 0;
+    }
+    
+    .menu-list {
+        margin: 10px;
+    }
+    
+    .menu-item {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 350px) {
+    .features {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-buttons {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .nav-btn {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+    
+    .user-info h2 {
+        font-size: 16px;
+    }
+    
+    .user-info p {
+        font-size: 12px;
+    }
+    
+    .avatar img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .func-nav .nav-item p {
+        font-size: 11px;
+    }
+    
+    .menu-item span {
+        font-size: 13px;
+    }
+}
+
+/* 平板设备适配 */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .page-container {
+        width: 768px;
+        height: 1024px;
+    }
+    
+    .user-section {
+        margin-top: 80px;
+        padding: 20px 30px;
+    }
+    
+    .avatar img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .user-info h2 {
+        font-size: 24px;
+    }
+    
+    .user-info p {
+        font-size: 18px;
+    }
+    
+    .edit-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    
+    .func-nav {
+        margin: 50px 30px;
+        padding: 20px 0;
+    }
+    
+    .nav-icon {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .func-nav .nav-item p {
+        font-size: 16px;
+    }
+    
+    .menu-list {
+        margin: 20px 30px;
+    }
+    
+    .menu-item {
+        padding: 25px;
+    }
+    
+    .menu-item span {
+        font-size: 18px;
+    }
+    
+    .arrow {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .bottom-nav {
+        padding: 15px 0;
+    }
+    
+    .bottom-nav .nav-item {
+        font-size: 16px;
+    }
+    
+    .bottom-nav .nav-icon img {
+        width: 28px;
+        height: 28px;
+    }
+}

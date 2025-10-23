@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    background-color: #FDF9F4;
+    color: hsl(0, 0%, 20%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+/* 页面固定尺寸容器 */
+.page-container {
+    width: 393px;
+    height: 852px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 内容区域 - 可滚动 */
+.content-area {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.header-image {
+    position: relative; /* 相对定位，作为返回按钮的定位容器 */
+    width: 100%;
+}
+
+.header-image img {
+    width: 100%;
+    display: block; /* 去除图片底部间隙 */
+}
+
+/* 返回按钮样式 - 位于图片左上角 */
+.back-btn {
+    position: absolute; /* 绝对定位，相对于.header-image */
+    top: 15px; /* 距离顶部15px */
+    left: 10px; /* 距离左侧15px */
+    width: 60px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10; /* 确保按钮在图片上方 */
+}
+
+.back-btn img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.back-btn h2{
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.craftsman-info {
+    display: flex;
+    align-items: end;
+    padding: 15px;
+    margin-top: -40px;
+    position: relative;
+}
+
+.craftsman-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.info-text h2 {
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+.info-text p {
+    font-size: 14px;
+    color: #666;
+}
+
+.follow-btn {
+    margin-left: auto;
+    padding: 6px 12px;
+    background-color: #a07d50;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.section-header img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.section-header h3 {
+    font-size: 16px;
+}
+
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 15px;
+}
+
+.work-item {
+    text-align: center;
+}
+
+.work-item img {
+    width: 100%;
+    height: 120px;
+    background-color: #f0f0f0;
+    margin-bottom: 5px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.video-container {
+    padding: 15px;
+}
+
+.video-img {
+    width: 100%;
+    height: 200px;
+    background-color: #f0f0f0;
+    position: relative;
+    border-radius: 8px;
+}
+
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.play-btn img {
+    width: 348px;
+    height: 217px;
+}
+
+/* 自定义滚动条样式 */
+.content-area::-webkit-scrollbar {
+    width: 6px;
+}
+
+.content-area::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.content-area::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 10px;
+}
+
+.content-area::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* 响应式调整 */
+@media (max-width: 393px) {
+    body {
+        padding: 0;
+    }
+    
+    .page-container {
+        border-radius: 0;
+        width: 100%;
+        height: 100vh;
+    }
+}
